@@ -1,0 +1,169 @@
+﻿body {
+    padding: 0;
+    margin: 0;
+    font-family:  'roboto' sans-serif;
+}
+
+p {
+    font-size: 19px;
+    color: #808080;
+}
+/*Navigation bar */
+.mainNavbar {
+    position: fixed;
+    top: 0;
+}
+
+.wrapper {
+    width:100%;
+    top:0;
+    height: auto;
+    border-bottom: 1px solid white;
+}
+
+    .wrapper .down1 {
+        display: none;
+    }
+
+    .wrapper .home-logo {
+        margin-right: 20px;
+    }
+
+    .wrapper ul li {
+        padding: 15px;
+    }
+
+        .wrapper ul li a {
+            color: white;
+        }
+
+    .wrapper .btn1 {
+        background-color: transparent;
+        color: white;
+        border: 1px solid #fff;
+    }
+
+        .wrapper .btn1:hover {
+            color: #fff;
+        }
+/*.header*/
+#main {
+    position: relative;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0)0%, rgba(0, 0, 0, 0.06) 10%, rgba(0, 0, 0, 0.15) 22%,rgba(0, 0, 0, 0.72) 75%, rgba(0, 0, 0, 0.84) 89%, rgba(0, 0, 0, 0.91) 100%),url(../images/contact-banner.jpg);
+    background-size: cover;
+    height: 500px;
+    background-position: center;
+    margin-top:-115px;
+}
+
+
+    .header h1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        font-size: 48px;
+    }
+/*Form*/
+#message textarea {
+    height: 300px;
+}
+
+    #message textarea::-webkit-input-placeholder {
+        text-align: center;
+        padding: 12%;
+    }
+
+.btn-login:hover {
+    background-color: transparent !important;
+    color: #fff !important;
+}
+
+.btn-send {
+    margin-top: 15px;
+    height: 36px;
+    color: #fff;
+    border: 1px solid #e53b51;
+    background-color: #e53b51;
+    border: none;
+    border-radius: 3px;
+}
+/*Footer */
+footer {
+    background-color: #454848;
+    height: auto;
+}
+
+    footer img {
+        margin: 15px;
+    }
+
+    footer .footer-a {
+        float: right;
+        margin-top: 1.5%;
+        padding: 15px;
+        color: white;
+    }
+
+        footer .footer-a:hover {
+            color: #fff;
+        }
+
+
+
+
+
+@media only screen and (min-width : 320px) and (max-width: 600px) {
+    /*Navigation bar*/
+    #main {
+        position: relative;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0)0%, rgba(0, 0, 0, 0.06) 10%, rgba(0, 0, 0, 0.15) 22%,rgba(0, 0, 0, 0.72) 75%, rgba(0, 0, 0, 0.84) 89%, rgba(0, 0, 0, 0.91) 100%),url('../images/contact-banner-mobile.jpg');
+    }
+
+    .home-logo {
+        width: 150px;
+    }
+
+        .home-logo img {
+            margin-right: 0;
+            width: 100%;
+        }
+
+
+    .header h1 {
+        font-size: 30px;
+    }
+
+    .header img {
+        width: auto;
+        height: 40px;
+        margin-right: 0;
+    }
+    /*Form*/
+    #message textarea::-webkit-input-placeholder {
+        padding-top: 40%;
+    }
+
+    .btn-send {
+        width: 100%;
+    }
+    /*Footer*/
+    .footer {
+        display: grid;
+        flex-wrap: wrap;
+        height: 150px;
+        text-align: center;
+    }
+
+        .footer img {
+            width: 40%;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .footer .footer-a {
+            font-size: 12px;
+            margin: 0;
+            padding: 0;
+        }
+}

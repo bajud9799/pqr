@@ -1,0 +1,101 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    font-family: ' 'roboto' sans-serif' sans-serif;
+}
+
+/*Dropkick chnage */
+.dk-selected {
+    border-radius:3px;
+    border-color:#808080;
+    height:40px;
+    margin-top:0!important;
+}
+
+    .dk-selected:before {
+        content: none
+    }
+
+    .dk-selected:after {
+        border-left: none;
+        margin: 0;
+    }
+
+.dk-select .dk-selected::after {
+    content: url("../images/down-arrow-grey.svg");
+}
+
+.dk-select-open-down .dk-selected::after {
+    transform: rotate(180deg) !important;
+}
+
+
+
+.dk-select, .dk-select-multi {
+    display: block;
+    margin-top: 0 !important;
+    width: auto;
+    line-height:200%;
+}
+
+.dk-selected:hover, .dk-selected:focus {
+    outline: none;
+    border-color: #808080;
+}
+
+.dk-select-options .dk-option-highlight {
+    background-color: #e53b51;
+    color: #fff;
+}
+
+.dk-option-selected {
+    background-color: #e53b51;
+    color: #fff;
+}
+.sign-up {
+    display: flex;
+    justify-content: center;
+}
+
+    .sign-up input {
+        height: 40px;
+        padding-left: 3px;
+        border: 1px solid;
+        border-color: #808080;
+        border-radius: 3px;
+    }
+
+    .sign-up select {
+        margin-top:0;
+    }
+
+    .sign-up h4 {
+        text-align: center;
+    }
+
+    .sign-up label {
+        margin-bottom: 0
+    }
+
+    .sign-up form div {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sign-up .date-logo {
+        margin-top: auto;
+    }
+
+        .sign-up .date-logo input {
+            background: url(../images/orange-calander-icon.png) no-repeat 5px;
+            background-size: 25px;
+            background-color: #fff;
+            padding-left: 40px;
+        }
+
+    .sign-up .sign-up-button {
+        background-color: #e53b51;
+        color: #fff;
+        border-color: #e53b51;
+    }

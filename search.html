@@ -1,0 +1,1044 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- JS -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/datepicker.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/dropkick.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/search.js"></script>
+    <!-- CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/datepicker-theme.css" rel="stylesheet" />
+    <link href="css/owl.theme.default.min.css" rel="stylesheet" />
+    <link href="css/owl.carousel.min.css" rel="stylesheet" />
+    <link href="css/swiper.min.css" rel="stylesheet" />
+    <link href="css/dropkick.css" rel="stylesheet" />
+    <link href="css/search.css" rel="stylesheet" />
+    <style>
+
+
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+    <title>Search</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm sticky-top main1">
+        <a href="project.html" class="home-logo">
+            <img src="images/logo.png" alt="Alternate Text" />
+
+        </a>
+        <div class="navbar-toggler" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <a>
+                <img src="images/menu - Copy.svg" alt="Alternate Text" />
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="nav navbar-nav mr-auto">
+                <li class="nav-left ml-4"><a class="nav-link" href="work.html">HOW IT WORKS</a></li>
+                <li class="nav-left ml-3"><a class="nav-link" href="contect.html">CONTACT US</a></li>
+            </ul>
+            <form class="form-inline">
+                <button class=" btn1 btn btn-outline-primary" type="submit">LOGIN</button>
+            </form>
+        </div>
+    </nav>
+    <div id="banner-search" class="py-3">
+        <div class="container-fluid">
+            <div class="banner-search col-lg-12 col-sm-12">
+                <nav class="d-flex col-lg-10 col-sm-10 navbar navbar-expand-sm">
+                    <div class="d-flex mob-a">
+                        <p class="navbar-toggler col-lg-11" data-toggle="collapse" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="mob-head">Volunteer</span> in <span class="mob-head">Combodia</span> for <span class="mob-head">Animal Conversation</span>
+                        </p>
+                        <button class="navbar-toggler btn-edit col-lg-1" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                            <img class="edit-icon" src="images/edit-icon.png" />
+                        </button>
+                        <div class="navbar-toggler col-lg-1 more" data-toggle="collapse" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                            <div class="more col-lg-2 col-sm-2">
+                                <a class="more-filter" data-toggle="modal" data-target="#filtermodal" id="filter" name="More filters">More filters</a><span class="btn-badge sec counter counter-lg">4</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collapse navbar-collapse col-md-10;" id="navbarTogglerDemo01">
+                        <div class="col-lg-4 col-sm-12 col-md-5 pl-0">
+                            <h6>Cause</h6>
+                            <div class="custom-checkbox d-inline-flex">
+
+                                <label class="container check-option  col-md-6">
+                                    <span>
+                                        Volunteer
+                                    </span>
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="container check-option  col-md-6">
+                                    <span>
+                                        Teach
+                                    </span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="container check-option ">
+                                    <span>
+                                        Intern
+                                    </span>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="country col-lg-4 col-sm-4 col-md-4">
+                            <h6>Country</h6>
+                            <div>
+                                <input type="search" name="search" class="country-search" placeholder="Search Country" />
+                            </div>
+                        </div>
+                        <div class="country col-lg-4 col-sm-2 col-md-4">
+                            <h6>Activity</h6>
+                            <div class="conversation">
+                                <select>
+                                    <option value="first">Animal Conversation</option>
+                                    <option value="sencond">Animal Conversation</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <div class="more1 col-lg-2 col-sm-2 pr-0 col-md-2">
+                    <a class="more-filter d-filter" data-toggle="modal" data-target="#filtermodal" id="filter" name="More filters" value="More filters">More filters</a><span class="btn-badge sec counter counter-lg">4</span>
+                    <a class="more-filter tab-filter" data-toggle="modal" data-target="#filtermodal" id="filter" name="More filters">...</a><span class="btn-badge sec counter counter-lg">4</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--model-->
+    <div class="modal fade" id="filtermodal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content c-content">
+                <div class="modal-title">
+                    <a href="search.html" data-dismiss="modal">
+                        <img class="modal-img" src="images/close-black - Copy.svg" />
+                    </a>
+                </div>
+                <div class="modal-body">
+                    <div class="row container-fluid d-flex justify-content-lg-between  flex-lg-row flex-md-column">
+                        <div class="section date-section">
+
+                            <form id="#startdate1">
+                                <div class="row d-flex justify-content-between">
+                                    <h2 class="start">Start date(range)</h2>
+                                    <a href="#startdate1" onclick="resetdate()" class="reset">Reset</a>
+                                </div>
+                                <div class="row startdate d-flex justify-content-between">
+                                    <div class="month">
+                                        <select name="theme" id="start-month" class=" form-control  my-auto">
+                                            <option value="">Month</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                        </select>
+                                    </div>
+                                    <div class="date">
+                                        <select name="theme" id="start-date" class=" form-control  my-auto">
+                                            <option value="">dd</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                        </select>
+                                    </div>
+                                    <div class="year">
+                                        <select name="theme" id="start-year" class=" form-control  my-auto">
+                                            <option value="">yyyy</option>
+                                            <option value="2019">2019</option>
+                                            <option value="2018">2018</option>
+                                            <option value="2017">2017</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row enddate d-flex justify-content-between mt-2">
+                                    <div class="month">
+                                        <select name="theme" id="end-month" class=" form-control  my-auto">
+                                            <option value="">Month</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                        </select>
+                                    </div>
+                                    <div class="date">
+                                        <select name="theme" id="end-date" class=" form-control  my-auto">
+                                            <option value="">dd</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                        </select>
+                                    </div>
+                                    <div class="year">
+                                        <select name="theme" id="end-year" class=" form-control  my-auto">
+                                            <option value="">yyyy</option>
+                                            <option value="2019">2019</option>
+                                            <option value="2018">2018</option>
+                                            <option value="2017">2017</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="section section-duration">
+                            <div class="row d-flex justify-content-between">
+                                <h2 class="start">Duration</h2>
+                                <a href="#timeDuration" onclick="sliderRange()" class="reset">Reset</a>
+                            </div>
+                            <form class="row" id="timeDuration">
+                                <input type="text" id="amount" readonly class="weeks-duration">
+                                <div id="slider-range" class="slider mt-3"></div>
+                            </form>
+
+                            <div id="slider-range" class="row price-filter-range" name="rangeInput"></div>
+
+                        </div>
+                        <div class="section mr-2">
+                            <div class="row d-flex justify-content-between">
+                                <h2 class="start">Minimum Age</h2>
+                            </div>
+                            <div class="row">
+                                <select name="theme" id="minimum-age" class="form-control my-auto">
+                                    <option value="">--</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary see-result mx-auto">See Results</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--model complete-->
+    <div class="container-fluid mt-3">
+        <div class="result px-3">
+            <p class="">329 Results</p>
+            <div class="d-flex">
+                <p class="pr-1 sort-by">Sort by:</p>
+                <select class="relevancy">
+                    <option value="value">Relevancy</option>
+                    <option value="value">Relevancy</option>
+                    <option value="value">Relevancy</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class=" container-fluid searching col-lg-12 col-sm-12">
+        <div class="owl-lorem col-lg-4 col-sm-4 owl-carousel owl-theme">
+        <div>
+            <div class="lorem-ipsum">
+                <h3 class="lorem-heading"><span>LOREM IPSUM</span></h3>
+            </div>
+            <div>
+                <h4>Volunteer with Tiger</h4>
+                <div class="love pb-2">
+                    <div class="d-flex">
+                        <img class="mt-1" src="images/volunteer-logo01.png" />
+                        <p><span class="love-volunteer">Love Volunteers</span></p>
+                    </div>
+                    <p class="text-muted">$215/week <span class="dot">.</span> 1-12weeks duration</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="lorem-ipsum">
+                <h3 class="lorem-heading"><span>LOREM IPSUM</span></h3>
+            </div>
+            <div>
+                <h4>Volunteer with Tiger</h4>
+                <div class="love pb-2">
+                    <div class="d-flex">
+                        <img class="mt-1" src="images/volunteer-logo01.png" />
+                        <p><span class="love-volunteer">Love Volunteers</span></p>
+                    </div>
+                    <p class="text-muted">$215/week <span class="dot">.</span> 1-12weeks duration</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="lorem-ipsum">
+                <h3 class="lorem-heading"><span>LOREM IPSUM</span></h3>
+            </div>
+            <div>
+                <h4>Volunteer with Tiger</h4>
+                <div class="love pb-2">
+                    <div class="d-flex">
+                        <img class="mt-1" src="images/volunteer-logo01.png" />
+                        <p><span class="love-volunteer">Love Volunteers</span></p>
+                    </div>
+                    <p class="text-muted">$215/week <span class="dot">.</span> 1-12weeks duration</p>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- Slider  -->
+        <!--<div class="col-lg-4 col-sm-4 ">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="lorem-ipsum" style="background-image: url('images/thumb02.jpg'); height:250px;">
+                            <h3 class="lorem-heading"><span>LOREM IPSUM</span></h3>
+                        </div>
+                        <div>
+                            <h4>Volunteer with Tiger</h4>
+                            <div class="love pb-2">
+                                <div class="d-flex">
+                                    <img class="mt-1" src="images/volunteer-logo01.png" />
+                                    <p><span class="love-volunteer">Love Volunteers</span></p>
+                                </div>
+                                <p class="text-muted">$215/week <span class="dot">.</span> 1-12weeks duration</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="lorem-ipsum" style="background-image: url('images/thumb02.jpg'); height:250px;">
+                            <h3 class="lorem-heading"><span>LOREM IPSUM</span></h3>
+                        </div>
+                        <div>
+                            <h4>Volunteer with Tiger</h4>
+                            <div class="love pb-2">
+                                <div class="d-flex">
+                                    <img class="mt-1" src="images/volunteer-logo01.png" />
+                                    <p><span class="love-volunteer">Love Volunteers</span></p>
+                                </div>
+                                <p class="text-muted">$215/week <span class="dot">.</span> 1-12weeks duration</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="lorem-ipsum" style="background-image: url('images/thumb02.jpg'); height:250px;">
+                            <h3 class="lorem-heading"><span>LOREM IPSUM</span></h3>
+                        </div>
+                        <div>
+                            <h4>Volunteer with Tiger</h4>
+                            <div class="love pb-2">
+                                <div class="d-flex">
+                                    <img class="mt-1" src="images/volunteer-logo01.png" />
+                                    <p><span class="love-volunteer">Love Volunteers</span></p>
+                                </div>
+                                <p class="text-muted">$215/week <span class="dot">.</span> 1-12weeks duration</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next swiper-button-white"></div>
+                <div class="swiper-button-prev swiper-button-white"></div>
+            </div>
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        </script>
+        </div>-->
+        <div class="owl-lorem col-lg-4 col-sm-4 owl-carousel owl-theme">
+            <div>
+                <div class="lorem-ipsum">
+                    <h3 class="lorem-heading"><span>LOREM IPSUM</span></h3>
+                </div>
+                <div>
+                    <h4>Volunteer with Tiger</h4>
+                    <div class="love pb-2">
+                        <div class="d-flex">
+                            <img class="mt-1" src="images/volunteer-logo01.png" />
+                            <p><span class="love-volunteer">Love Volunteers</span></p>
+                        </div>
+                        <p class="text-muted">$215/week <span class="dot">.</span> 1-12weeks duration</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="lorem-ipsum">
+                    <h3 class="lorem-heading"><span>LOREM IPSUM</span></h3>
+                </div>
+                <div>
+                    <h4>Volunteer with Tiger</h4>
+                    <div class="love pb-2">
+                        <div class="d-flex">
+                            <img class="mt-1" src="images/volunteer-logo01.png" />
+                            <p><span class="love-volunteer">Love Volunteers</span></p>
+                        </div>
+                        <p class="text-muted">$215/week <span class="dot">.</span> 1-12weeks duration</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="lorem-ipsum">
+                    <h3 class="lorem-heading"><span>LOREM IPSUM</span></h3>
+                </div>
+                <div>
+                    <h4>Volunteer with Tiger</h4>
+                    <div class="love pb-2">
+                        <div class="d-flex">
+                            <img class="mt-1" src="images/volunteer-logo01.png" />
+                            <p><span class="love-volunteer">Love Volunteers</span></p>
+                        </div>
+                        <p class="text-muted">$215/week <span class="dot">.</span> 1-12weeks duration</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="owl-lorem col-lg-4 col-sm-4 owl-carousel owl-theme">
+            <div>
+                <div class="lorem-ipsum">
+                    <h3 class="lorem-heading"><span>LOREM IPSUM</span></h3>
+                </div>
+                <div>
+                    <h4>Volunteer with Tiger</h4>
+                    <div class="love pb-2">
+                        <div class="d-flex">
+                            <img class="mt-1" src="images/volunteer-logo01.png" />
+                            <p><span class="love-volunteer">Love Volunteers</span></p>
+                        </div>
+                        <p class="text-muted">$215/week <span class="dot">.</span> 1-12weeks duration</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="lorem-ipsum">
+                    <h3 class="lorem-heading"><span>LOREM IPSUM</span></h3>
+                </div>
+                <div>
+                    <h4>Volunteer with Tiger</h4>
+                    <div class="love pb-2">
+                        <div class="d-flex">
+                            <img class="mt-1" src="images/volunteer-logo01.png" />
+                            <p><span class="love-volunteer">Love Volunteers</span></p>
+                        </div>
+                        <p class="text-muted">$215/week <span class="dot">.</span> 1-12weeks duration</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="lorem-ipsum">
+                    <h3 class="lorem-heading"><span>LOREM IPSUM</span></h3>
+                </div>
+                <div>
+                    <h4>Volunteer with Tiger</h4>
+                    <div class="love pb-2">
+                        <div class="d-flex">
+                            <img class="mt-1" src="images/volunteer-logo01.png" />
+                            <p><span class="love-volunteer">Love Volunteers</span></p>
+                        </div>
+                        <p class="text-muted">$215/week <span class="dot">.</span> 1-12weeks duration</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="owl-lorem col-lg-4 col-sm-4 owl-carousel owl-theme">
+            <div>
+                <div class="lorem-ipsum">
+                    <h3 class="lorem-heading"><span>LOREM IPSUM</span></h3>
+                </div>
+                <div>
+                    <h4>Volunteer with Tiger</h4>
+                    <div class="love pb-2">
+                        <div class="d-flex">
+                            <img class="mt-1" src="images/volunteer-logo01.png" />
+                            <p><span class="love-volunteer">Love Volunteers</span></p>
+                        </div>
+                        <p class="text-muted">$215/week <span class="dot">.</span> 1-12weeks duration</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="lorem-ipsum">
+                    <h3 class="lorem-heading"><span>LOREM IPSUM</span></h3>
+                </div>
+                <div>
+                    <h4>Volunteer with Tiger</h4>
+                    <div class="love pb-2">
+                        <div class="d-flex">
+                            <img class="mt-1" src="images/volunteer-logo01.png" />
+                            <p><span class="love-volunteer">Love Volunteers</span></p>
+                        </div>
+                        <p class="text-muted">$215/week <span class="dot">.</span> 1-12weeks duration</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="lorem-ipsum">
+                    <h3 class="lorem-heading"><span>LOREM IPSUM</span></h3>
+                </div>
+                <div>
+                    <h4>Volunteer with Tiger</h4>
+                    <div class="love pb-2">
+                        <div class="d-flex">
+                            <img class="mt-1" src="images/volunteer-logo01.png" />
+                            <p><span class="love-volunteer">Love Volunteers</span></p>
+                        </div>
+                        <p class="text-muted">$215/week <span class="dot">.</span> 1-12weeks duration</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="owl-lorem col-lg-4 col-sm-4 owl-carousel owl-theme">
+            <div>
+                <div class="lorem-ipsum">
+                    <h3 class="lorem-heading"><span>LOREM IPSUM</span></h3>
+                </div>
+                <div>
+                    <h4>Volunteer with Tiger</h4>
+                    <div class="love pb-2">
+                        <div class="d-flex">
+                            <img class="mt-1" src="images/volunteer-logo01.png" />
+                            <p><span class="love-volunteer">Love Volunteers</span></p>
+                        </div>
+                        <p class="text-muted">$215/week <span class="dot">.</span> 1-12weeks duration</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="lorem-ipsum">
+                    <h3 class="lorem-heading"><span>LOREM IPSUM</span></h3>
+                </div>
+                <div>
+                    <h4>Volunteer with Tiger</h4>
+                    <div class="love pb-2">
+                        <div class="d-flex">
+                            <img class="mt-1" src="images/volunteer-logo01.png" />
+                            <p><span class="love-volunteer">Love Volunteers</span></p>
+                        </div>
+                        <p class="text-muted">$215/week <span class="dot">.</span> 1-12weeks duration</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="lorem-ipsum">
+                    <h3 class="lorem-heading"><span>LOREM IPSUM</span></h3>
+                </div>
+                <div>
+                    <h4>Volunteer with Tiger</h4>
+                    <div class="love pb-2">
+                        <div class="d-flex">
+                            <img class="mt-1" src="images/volunteer-logo01.png" />
+                            <p><span class="love-volunteer">Love Volunteers</span></p>
+                        </div>
+                        <p class="text-muted">$215/week <span class="dot">.</span> 1-12weeks duration</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="owl-lorem col-lg-4 col-sm-4 owl-carousel owl-theme">
+            <div>
+                <div class="lorem-ipsum">
+                    <h3 class="lorem-heading"><span>LOREM IPSUM</span></h3>
+                </div>
+                <div>
+                    <h4>Volunteer with Tiger</h4>
+                    <div class="love pb-2">
+                        <div class="d-flex">
+                            <img class="mt-1" src="images/volunteer-logo01.png" />
+                            <p><span class="love-volunteer">Love Volunteers</span></p>
+                        </div>
+                        <p class="text-muted">$215/week <span class="dot">.</span> 1-12weeks duration</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="lorem-ipsum">
+                    <h3 class="lorem-heading"><span>LOREM IPSUM</span></h3>
+                </div>
+                <div>
+                    <h4>Volunteer with Tiger</h4>
+                    <div class="love pb-2">
+                        <div class="d-flex">
+                            <img class="mt-1" src="images/volunteer-logo01.png" />
+                            <p><span class="love-volunteer">Love Volunteers</span></p>
+                        </div>
+                        <p class="text-muted">$215/week <span class="dot">.</span> 1-12weeks duration</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="lorem-ipsum">
+                    <h3 class="lorem-heading"><span>LOREM IPSUM</span></h3>
+                </div>
+                <div>
+                    <h4>Volunteer with Tiger</h4>
+                    <div class="love pb-2">
+                        <div class="d-flex">
+                            <img class="mt-1" src="images/volunteer-logo01.png" />
+                            <p><span class="love-volunteer">Love Volunteers</span></p>
+                        </div>
+                        <p class="text-muted">$215/week <span class="dot">.</span> 1-12weeks duration</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="owl-lorem col-lg-4 col-sm-4 owl-carousel owl-theme">
+            <div>
+                <div class="lorem-ipsum">
+                    <h3 class="lorem-heading"><span>LOREM IPSUM</span></h3>
+                </div>
+                <div>
+                    <h4>Volunteer with Tiger</h4>
+                    <div class="love pb-2">
+                        <div class="d-flex">
+                            <img class="mt-1" src="images/volunteer-logo01.png" />
+                            <p><span class="love-volunteer">Love Volunteers</span></p>
+                        </div>
+                        <p class="text-muted">$215/week <span class="dot">.</span> 1-12weeks duration</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="lorem-ipsum">
+                    <h3 class="lorem-heading"><span>LOREM IPSUM</span></h3>
+                </div>
+                <div>
+                    <h4>Volunteer with Tiger</h4>
+                    <div class="love pb-2">
+                        <div class="d-flex">
+                            <img class="mt-1" src="images/volunteer-logo01.png" />
+                            <p><span class="love-volunteer">Love Volunteers</span></p>
+                        </div>
+                        <p class="text-muted">$215/week <span class="dot">.</span> 1-12weeks duration</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="lorem-ipsum">
+                    <h3 class="lorem-heading"><span>LOREM IPSUM</span></h3>
+                </div>
+                <div>
+                    <h4>Volunteer with Tiger</h4>
+                    <div class="love pb-2">
+                        <div class="d-flex">
+                            <img class="mt-1" src="images/volunteer-logo01.png" />
+                            <p><span class="love-volunteer">Love Volunteers</span></p>
+                        </div>
+                        <p class="text-muted">$215/week <span class="dot">.</span> 1-12weeks duration</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="owl-lorem col-lg-4 col-sm-4 owl-carousel owl-theme">
+            <div>
+                <div class="lorem-ipsum">
+                    <h3 class="lorem-heading"><span>LOREM IPSUM</span></h3>
+                </div>
+                <div>
+                    <h4>Volunteer with Tiger</h4>
+                    <div class="love pb-2">
+                        <div class="d-flex">
+                            <img class="mt-1" src="images/volunteer-logo01.png" />
+                            <p><span class="love-volunteer">Love Volunteers</span></p>
+                        </div>
+                        <p class="text-muted">$215/week <span class="dot">.</span> 1-12weeks duration</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="lorem-ipsum">
+                    <h3 class="lorem-heading"><span>LOREM IPSUM</span></h3>
+                </div>
+                <div>
+                    <h4>Volunteer with Tiger</h4>
+                    <div class="love pb-2">
+                        <div class="d-flex">
+                            <img class="mt-1" src="images/volunteer-logo01.png" />
+                            <p><span class="love-volunteer">Love Volunteers</span></p>
+                        </div>
+                        <p class="text-muted">$215/week <span class="dot">.</span> 1-12weeks duration</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="lorem-ipsum">
+                    <h3 class="lorem-heading"><span>LOREM IPSUM</span></h3>
+                </div>
+                <div>
+                    <h4>Volunteer with Tiger</h4>
+                    <div class="love pb-2">
+                        <div class="d-flex">
+                            <img class="mt-1" src="images/volunteer-logo01.png" />
+                            <p><span class="love-volunteer">Love Volunteers</span></p>
+                        </div>
+                        <p class="text-muted">$215/week <span class="dot">.</span> 1-12weeks duration</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="owl-lorem col-lg-4 col-sm-4 owl-carousel owl-theme">
+            <div>
+                <div class="lorem-ipsum">
+                    <h3 class="lorem-heading"><span>LOREM IPSUM</span></h3>
+                </div>
+                <div>
+                    <h4>Volunteer with Tiger</h4>
+                    <div class="love pb-2">
+                        <div class="d-flex">
+                            <img class="mt-1" src="images/volunteer-logo01.png" />
+                            <p><span class="love-volunteer">Love Volunteers</span></p>
+                        </div>
+                        <p class="text-muted">$215/week <span class="dot">.</span> 1-12weeks duration</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="lorem-ipsum">
+                    <h3 class="lorem-heading"><span>LOREM IPSUM</span></h3>
+                </div>
+                <div>
+                    <h4>Volunteer with Tiger</h4>
+                    <div class="love pb-2">
+                        <div class="d-flex">
+                            <img class="mt-1" src="images/volunteer-logo01.png" />
+                            <p><span class="love-volunteer">Love Volunteers</span></p>
+                        </div>
+                        <p class="text-muted">$215/week <span class="dot">.</span> 1-12weeks duration</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="lorem-ipsum">
+                    <h3 class="lorem-heading"><span>LOREM IPSUM</span></h3>
+                </div>
+                <div>
+                    <h4>Volunteer with Tiger</h4>
+                    <div class="love pb-2">
+                        <div class="d-flex">
+                            <img class="mt-1" src="images/volunteer-logo01.png" />
+                            <p><span class="love-volunteer">Love Volunteers</span></p>
+                        </div>
+                        <p class="text-muted">$215/week <span class="dot">.</span> 1-12weeks duration</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="owl-lorem col-lg-4 col-sm-4 owl-carousel owl-theme">
+            <div>
+                <div class="lorem-ipsum">
+                    <h3 class="lorem-heading"><span>LOREM IPSUM</span></h3>
+                </div>
+                <div>
+                    <h4>Volunteer with Tiger</h4>
+                    <div class="love pb-2">
+                        <div class="d-flex">
+                            <img class="mt-1" src="images/volunteer-logo01.png" />
+                            <p><span class="love-volunteer">Love Volunteers</span></p>
+                        </div>
+                        <p class="text-muted">$215/week <span class="dot">.</span> 1-12weeks duration</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="lorem-ipsum">
+                    <h3 class="lorem-heading"><span>LOREM IPSUM</span></h3>
+                </div>
+                <div>
+                    <h4>Volunteer with Tiger</h4>
+                    <div class="love pb-2">
+                        <div class="d-flex">
+                            <img class="mt-1" src="images/volunteer-logo01.png" />
+                            <p><span class="love-volunteer">Love Volunteers</span></p>
+                        </div>
+                        <p class="text-muted">$215/week <span class="dot">.</span> 1-12weeks duration</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="lorem-ipsum">
+                    <h3 class="lorem-heading"><span>LOREM IPSUM</span></h3>
+                </div>
+                <div>
+                    <h4>Volunteer with Tiger</h4>
+                    <div class="love pb-2">
+                        <div class="d-flex">
+                            <img class="mt-1" src="images/volunteer-logo01.png" />
+                            <p><span class="love-volunteer">Love Volunteers</span></p>
+                        </div>
+                        <p class="text-muted">$215/week <span class="dot">.</span> 1-12weeks duration</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="owl-lorem col-lg-4 col-sm-4 owl-carousel owl-theme">
+            <div>
+                <div class="lorem-ipsum">
+                    <h3 class="lorem-heading"><span>LOREM IPSUM</span></h3>
+                </div>
+                <div>
+                    <h4>Volunteer with Tiger</h4>
+                    <div class="love pb-2">
+                        <div class="d-flex">
+                            <img class="mt-1" src="images/volunteer-logo01.png" />
+                            <p><span class="love-volunteer">Love Volunteers</span></p>
+                        </div>
+                        <p class="text-muted">$215/week <span class="dot">.</span> 1-12weeks duration</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="lorem-ipsum">
+                    <h3 class="lorem-heading"><span>LOREM IPSUM</span></h3>
+                </div>
+                <div>
+                    <h4>Volunteer with Tiger</h4>
+                    <div class="love pb-2">
+                        <div class="d-flex">
+                            <img class="mt-1" src="images/volunteer-logo01.png" />
+                            <p><span class="love-volunteer">Love Volunteers</span></p>
+                        </div>
+                        <p class="text-muted">$215/week <span class="dot">.</span> 1-12weeks duration</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="lorem-ipsum">
+                    <h3 class="lorem-heading"><span>LOREM IPSUM</span></h3>
+                </div>
+                <div>
+                    <h4>Volunteer with Tiger</h4>
+                    <div class="love pb-2">
+                        <div class="d-flex">
+                            <img class="mt-1" src="images/volunteer-logo01.png" />
+                            <p><span class="love-volunteer">Love Volunteers</span></p>
+                        </div>
+                        <p class="text-muted">$215/week <span class="dot">.</span> 1-12weeks duration</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="owl-lorem col-lg-4 col-sm-4 owl-carousel owl-theme">
+            <div>
+                <div class="lorem-ipsum">
+                    <h3 class="lorem-heading"><span>LOREM IPSUM</span></h3>
+                </div>
+                <div>
+                    <h4>Volunteer with Tiger</h4>
+                    <div class="love pb-2">
+                        <div class="d-flex">
+                            <img class="mt-1" src="images/volunteer-logo01.png" />
+                            <p><span class="love-volunteer">Love Volunteers</span></p>
+                        </div>
+                        <p class="text-muted">$215/week <span class="dot">.</span> 1-12weeks duration</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="lorem-ipsum">
+                    <h3 class="lorem-heading"><span>LOREM IPSUM</span></h3>
+                </div>
+                <div>
+                    <h4>Volunteer with Tiger</h4>
+                    <div class="love pb-2">
+                        <div class="d-flex">
+                            <img class="mt-1" src="images/volunteer-logo01.png" />
+                            <p><span class="love-volunteer">Love Volunteers</span></p>
+                        </div>
+                        <p class="text-muted">$215/week <span class="dot">.</span> 1-12weeks duration</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="lorem-ipsum">
+                    <h3 class="lorem-heading"><span>LOREM IPSUM</span></h3>
+                </div>
+                <div>
+                    <h4>Volunteer with Tiger</h4>
+                    <div class="love pb-2">
+                        <div class="d-flex">
+                            <img class="mt-1" src="images/volunteer-logo01.png" />
+                            <p><span class="love-volunteer">Love Volunteers</span></p>
+                        </div>
+                        <p class="text-muted">$215/week <span class="dot">.</span> 1-12weeks duration</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="owl-lorem col-lg-4 col-sm-4 owl-carousel owl-theme">
+            <div>
+                <div class="lorem-ipsum">
+                    <h3 class="lorem-heading"><span>LOREM IPSUM</span></h3>
+                </div>
+                <div>
+                    <h4>Volunteer with Tiger</h4>
+                    <div class="love pb-2">
+                        <div class="d-flex">
+                            <img class="mt-1" src="images/volunteer-logo01.png" />
+                            <p><span class="love-volunteer">Love Volunteers</span></p>
+                        </div>
+                        <p class="text-muted">$215/week <span class="dot">.</span> 1-12weeks duration</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="lorem-ipsum">
+                    <h3 class="lorem-heading"><span>LOREM IPSUM</span></h3>
+                </div>
+                <div>
+                    <h4>Volunteer with Tiger</h4>
+                    <div class="love pb-2">
+                        <div class="d-flex">
+                            <img class="mt-1" src="images/volunteer-logo01.png" />
+                            <p><span class="love-volunteer">Love Volunteers</span></p>
+                        </div>
+                        <p class="text-muted">$215/week <span class="dot">.</span> 1-12weeks duration</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="lorem-ipsum">
+                    <h3 class="lorem-heading"><span>LOREM IPSUM</span></h3>
+                </div>
+                <div>
+                    <h4>Volunteer with Tiger</h4>
+                    <div class="love pb-2">
+                        <div class="d-flex">
+                            <img class="mt-1" src="images/volunteer-logo01.png" />
+                            <p><span class="love-volunteer">Love Volunteers</span></p>
+                        </div>
+                        <p class="text-muted">$215/week <span class="dot">.</span> 1-12weeks duration</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="owl-lorem col-lg-4 col-sm-4 owl-carousel owl-theme">
+            <div>
+                <div class="lorem-ipsum">
+                    <h3 class="lorem-heading"><span>LOREM IPSUM</span></h3>
+                </div>
+                <div>
+                    <h4>Volunteer with Tiger</h4>
+                    <div class="love pb-2">
+                        <div class="d-flex">
+                            <img class="mt-1" src="images/volunteer-logo01.png" />
+                            <p><span class="love-volunteer">Love Volunteers</span></p>
+                        </div>
+                        <p class="text-muted">$215/week <span class="dot">.</span> 1-12weeks duration</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="lorem-ipsum">
+                    <h3 class="lorem-heading"><span>LOREM IPSUM</span></h3>
+                </div>
+                <div>
+                    <h4>Volunteer with Tiger</h4>
+                    <div class="love pb-2">
+                        <div class="d-flex">
+                            <img class="mt-1" src="images/volunteer-logo01.png" />
+                            <p><span class="love-volunteer">Love Volunteers</span></p>
+                        </div>
+                        <p class="text-muted">$215/week <span class="dot">.</span> 1-12weeks duration</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="lorem-ipsum">
+                    <h3 class="lorem-heading"><span>LOREM IPSUM</span></h3>
+                </div>
+                <div>
+                    <h4>Volunteer with Tiger</h4>
+                    <div class="love pb-2">
+                        <div class="d-flex">
+                            <img class="mt-1" src="images/volunteer-logo01.png" />
+                            <p><span class="love-volunteer">Love Volunteers</span></p>
+                        </div>
+                        <p class="text-muted">$215/week <span class="dot">.</span> 1-12weeks duration</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="owl-lorem col-lg-4 col-sm-4 owl-carousel owl-theme">
+            <div>
+                <div class="lorem-ipsum">
+                    <h3 class="lorem-heading"><span>LOREM IPSUM</span></h3>
+                </div>
+                <div>
+                    <h4>Volunteer with Tiger</h4>
+                    <div class="love pb-2">
+                        <div class="d-flex">
+                            <img class="mt-1" src="images/volunteer-logo01.png" />
+                            <p><span class="love-volunteer">Love Volunteers</span></p>
+                        </div>
+                        <p class="text-muted">$215/week <span class="dot">.</span> 1-12weeks duration</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="lorem-ipsum">
+                    <h3 class="lorem-heading"><span>LOREM IPSUM</span></h3>
+                </div>
+                <div>
+                    <h4>Volunteer with Tiger</h4>
+                    <div class="love pb-2">
+                        <div class="d-flex">
+                            <img class="mt-1" src="images/volunteer-logo01.png" />
+                            <p><span class="love-volunteer">Love Volunteers</span></p>
+                        </div>
+                        <p class="text-muted">$215/week <span class="dot">.</span> 1-12weeks duration</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="lorem-ipsum">
+                    <h3 class="lorem-heading"><span>LOREM IPSUM</span></h3>
+                </div>
+                <div>
+                    <h4>Volunteer with Tiger</h4>
+                    <div class="love pb-2">
+                        <div class="d-flex">
+                            <img class="mt-1" src="images/volunteer-logo01.png" />
+                            <p><span class="love-volunteer">Love Volunteers</span></p>
+                        </div>
+                        <p class="text-muted">$215/week <span class="dot">.</span> 1-12weeks duration</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pagination">
+        <nav aria-label="Page navigation">
+            <ul class="pagination abc">
+                <li class="page-item"><a class="px-2" href="#">1</a></li>
+                <li class="page-item"><a class="px-2" href="#">2</a></li>
+                <li class="page-item"><a class="px-2" href="#">...</a></li>
+                <li class="page-item"><a class="px-2" href="#">3</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <a href="project.html">
+                <img class="" src="images/logo_1.png" alt="Alternate Text" />
+            </a>
+            <a class="footer-a" href="contect.html">CONTACT US</a>
+            <a class="footer-a" href="faq.html">FAQ</a>
+        </div>
+    </footer>
+</body>
+</html>

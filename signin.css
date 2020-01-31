@@ -1,0 +1,50 @@
+﻿body {
+    margin:0;
+    padding:0;
+    font-family: 'roboto' sans-serif;
+}
+.xyz{
+    display:flex;
+    justify-content:center
+}
+.login h4{
+    text-align:center;
+}
+.login div {
+    display: flex;
+    flex-direction: column;
+}
+
+.login  div label {
+    margin-top: 10px;
+    color: #00acc1;
+    margin-bottom: 0;
+}
+
+.login input {
+    border: 1px solid #3d3d3d;
+    border-radius: 5px;
+}
+
+.login a {
+    margin-top: 10px;
+    color: #00acc1;
+    justify-content:flex-start;
+}
+
+    
+.signin-button {
+    margin-top: 10px;
+    display:block !important;
+    text-align:center;
+}
+.signin-button button {
+    color: #fff;
+    background-color: #e53b51;
+}
+
+
+
+.signin-button button:hover {
+    color: #fff;
+}

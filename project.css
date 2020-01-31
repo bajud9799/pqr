@@ -1,0 +1,732 @@
+﻿body {
+    padding: 0;
+    margin: 0;
+    font-family:  'roboto' sans-serif;
+    height: 100%;
+    position: relative;
+}
+
+h2 {
+    color: #00acc1;
+}
+/*Dropkick chnage */
+.dk-selected {
+    border: none;
+}
+
+    .dk-selected:before {
+        content: none
+    }
+
+    .dk-selected:after {
+        border-left: none;
+        margin: 0;
+    }
+
+.dk-select .dk-selected::after {
+    content: url("../images/down-arrow-grey.svg");
+}
+
+.dk-select-open-down .dk-selected::after {
+    transform: rotate(180deg) !important;
+}
+
+
+
+.dk-select, .dk-select-multi {
+    display: block;
+    width: auto;
+}
+
+.dk-selected:hover, .dk-selected:focus {
+    outline: none;
+    border-color: #00acc1;
+}
+
+.dk-select-options .dk-option-highlight {
+    background-color: #00acc1;
+    color: #fff;
+}
+
+.dk-option-selected {
+    background-color: #00acc1;
+    color: #fff;
+}
+/*Photos*/
+#gallery .modal-content {
+    height: 700px;
+    right:45%;
+    width:200%;
+    z-index: 100;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.swiper-slide {
+    background-size: cover;
+    background-position: center;
+}
+
+.gallery-top {
+    height: 80%;
+    width: 100%;
+}
+
+.gallery-thumbs {
+    height: 20%;
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+
+    .gallery-thumbs .swiper-slide {
+        height: 100%;
+        opacity: .5;
+    }
+
+    .gallery-thumbs .swiper-slide-thumb-active {
+        opacity: 1;
+    }
+/*Navigation when scroll*/
+.small-header {
+    border-bottom: 1px solid #fff;
+    background-color: #fff;
+    width: 100%;
+}
+
+    .small-header .down1 {
+        display: block;
+    }
+
+    .small-header .up1 {
+        display: none;
+    }
+
+    .small-header a {
+        color: #00acc1;
+    }
+
+        .small-header a img {
+            margin-right: 30px;
+        }
+
+    .small-header button {
+        color: #00acc1;
+        border: 1px solid #00acc1;
+    }
+
+    .small-header button:hover {
+        color: #00acc1;
+    }
+/*Nav bar*/
+.mainNavbar {
+    position: fixed;
+    top: 0;
+}
+
+.wrapper {
+    height: auto;
+    width:100%;
+    border-bottom: 1px solid white;
+}
+
+    .wrapper .down1 {
+        display: none;
+    }
+
+    .wrapper .home-logo {
+        margin-right: 20px;
+    }
+
+    .wrapper ul li {
+        padding: 15px;
+    }
+
+        .wrapper ul li a {
+            color: white;
+        }
+
+    .wrapper .btn1 {
+        background-color: transparent;
+        color: white;
+        border: 1px solid #fff;
+    }
+
+        .wrapper .btn1:hover {
+            color: #fff;
+        }
+
+
+
+/*Header*/
+
+
+
+.header {
+    height: 500px;
+    top: 0px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0)0%, rgba(0, 0, 0, 0.06) 10%, rgba(0, 0, 0, 0.15) 22%,rgba(0, 0, 0, 0.72) 75%, rgba(0, 0, 0, 0.84) 89%, rgba(0, 0, 0, 0.91) 100%),url(../images/banner3.jpg);
+}
+
+    .header h1 {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        color: #fff;
+    }
+
+    .header .btn2 {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        color: #00acc1;
+        font-size: 17px;
+        height: auto;
+        width: auto;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: white;
+    }
+
+.icon1 img {
+    height: 20px;
+}
+/*locaton & sub heading */
+.ghana {
+    color: #e53b51;
+}
+
+    .ghana:hover {
+        color: #e53b51;
+    }
+
+iframe {
+    width: 100%;
+}
+
+.main2 h4 {
+    color: #00acc1;
+}
+
+.main2 .play-logo {
+    border: 2px solid #cccccc;
+}
+.plan-text{
+    margin-left:2%;
+    align-self:center;
+}
+
+/*Sub navigation bar*/
+.subNavigation {
+    border-top: 1px solid #3d3d3d;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    position: sticky;
+    top: 90px;
+    z-index: 1000;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #e53b51 !important;
+}
+
+.nav-pills .nav-link {
+     border-radius: 0
+}
+
+.subNavigation a {
+    text-align: center;
+    color: #00acc1;
+    width: 20%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+    .subNavigation a:hover {
+        background-color: #e53b51;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .subNavigation a:in-range {
+        background-color: #e53b51;
+    }
+/*Cout Duration table*/
+.duration {
+    position: relative;
+    border: 0.6px solid #ccc;
+    width: 100%;
+    height: 100px;
+}
+
+    .duration > div {
+        display: flex;
+        align-self: center;
+        justify-content: space-around;
+    }
+
+    .duration img {
+        margin-top: 5px;
+        width: 30px;
+    }
+
+.cost {
+    border-left: 1px solid #ccc;
+    align-self: center;
+    justify-content: space-around;
+    display: flex;
+}
+
+
+
+.option1 {
+    align-self: center;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    width: 100px;
+}
+
+.cost img {
+    margin-top: 5px;
+    width: 40px;
+}
+/*Cost what include and what not include*/
+.whatInclude div h2 {
+    margin-left: -14px;
+    margin-right: -14px;
+    background-color: #00acc1;
+    color: white;
+    height: auto;
+    padding: 5px;
+    text-align: center;
+    font-size: 28px;
+}
+
+.whatInclude .not {
+    background-color: #e53b51;
+    margin-left: -14px;
+    margin-right: -14px;
+    height: auto;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    font-size: 28px;
+}
+
+.whatInclude .check1 {
+    margin-left: -15px;
+    border-left: 1px solid #3d3d3d;
+}
+
+.whatInclude .check {
+    color: dimgrey;
+    font-size: 12px;
+    padding-left: 15px;
+}
+/*Data table*/
+.table-column {
+}
+
+.table-heading {
+    padding: 5px;
+    background-color: #00acc1;
+    justify-content: center;
+    color: #fff;
+    border: 1px solid #fff;
+    border-right: none;
+}
+
+.table-content {
+    border: 1px solid #3d3d3d;
+    padding: 5px;
+    justify-content: center;
+    border-top: none;
+    border-right: none;
+    color: #00acc1
+}
+
+    .table-content span {
+        color: #e53b51;
+    }
+
+.arrow-left {
+    position: absolute;
+    top: 5%;
+    left: 2%;
+    height: 20px;
+}
+
+.arrow-right {
+    position: absolute;
+    height: 20px;
+    top: 5%;
+    right: 2%;
+}
+
+.owl-theme .owl-nav .disabled {
+    opacity: 0;
+}
+
+/*.right-button {
+    position: absolute;
+    left: 90%;
+    background-color: transparent;
+}
+
+.dataTable {
+}
+
+    .dataTable tr {
+        display: table-cell;
+    }
+
+        .dataTable tr td {
+            display: block;
+            text-align: center;
+            border: 1px solid #cccccc;
+            color: #00acc1;
+        }
+
+            .dataTable tr td b {
+                color: #e53b51;
+            }
+
+        .dataTable tr th {
+            display: block;
+            text-align: center;
+            border: 1px solid #fff;
+            color: white;
+            background-color: #00acc1;
+        }*/
+
+
+/*Right side sticky form*/
+
+.form1 {
+    background-color: #00acc1;
+    position: sticky;
+    top: 90px;
+    color: white;
+    padding: 20px;
+    height: 400px;
+}
+
+    .form1 a {
+        color: white;
+        text-decoration: underline;
+    }
+
+    .form1 .calander input {
+        background: url('../images/orange-calander-icon.png') no-repeat 10px;
+        background-color: #fff;
+        padding-left: 45px;
+    }
+
+    .form1 .border-form {
+        background-color: #26b8ca;
+        color: white;
+    }
+
+        .form1 .border-form p {
+            padding-left: 10px;
+        }
+/*Modal Signup */
+
+
+.sign-up {
+    display: flex;
+    justify-content: center;
+}
+
+    .sign-up form {
+        width: 100%;
+    }
+
+    .sign-up #dk2-duration {
+        border: 1px solid #808080;
+        border-radius: 3px;
+        align-items: center;
+    }
+
+    .sign-up #dk2-combobox {
+        margin-top: 0;
+        height: 40px;
+        padding: 8px;
+    }
+
+    .sign-up input {
+        height: 40px;
+        padding-left: 3px;
+        border: 1px solid;
+        border-color: #808080;
+        border-radius: 3px;
+    }
+
+    .sign-up select {
+        height: 35px;
+        border-color: #808080;
+        border-radius: 3px;
+    }
+
+    .sign-up h4 {
+        text-align: center;
+    }
+
+    .sign-up label {
+        margin-bottom: 0
+    }
+
+    .sign-up form div {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sign-up .date-logo {
+        margin-top: auto;
+    }
+
+        .sign-up .date-logo input {
+            background: url(../images/orange-calander-icon.png) no-repeat 5px;
+            background-size: 25px;
+            background-color: #fff;
+            padding-left: 40px;
+        }
+
+    .sign-up .sign-up-button {
+        background-color: #e53b51;
+        color: #fff;
+        border-color: #e53b51;
+    }
+
+/*Footer*/
+footer {
+    background-color: #454848;
+    height: auto;
+}
+
+    footer img {
+        margin: 15px;
+    }
+
+    footer .footer-a {
+        float: right;
+        margin-top: 1.5%;
+        padding: 15px;
+        color: white;
+    }
+
+        footer .footer-a:hover {
+            color: #fff;
+        }
+
+
+
+
+
+h4 {
+    color: #e53b51;
+}
+
+h6 {
+    font-size: 19px;
+}
+
+@media only screen and (min-width : 320px) and (max-width: 600px) {
+    h2 {
+        font-size: 21px;
+    }
+
+    h4 {
+        font-size: 17px;
+    }
+    .subNavigation{
+        top:61px;
+    }
+    .nav-link{
+        padding:5px 0!important;
+    }
+    #gallery .modal-content {
+        width:auto;
+        right:auto;
+        height: 350px;
+    }
+    /*Navigation bar*/
+    .home-logo {
+        width: 150px;
+    }
+
+        .home-logo img {
+            margin-right: 0;
+            width: 100%;
+        }
+
+    .wrapper ul li {
+        padding: initial;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    /*Header */
+    .header .btn2 {
+        right: 10px;
+        left: auto;
+        font-size: 14px;
+        padding: 5px;
+    }
+
+
+    .header h1 {
+        font-size: 23px;
+        text-align: center
+    }
+
+    /*Location*/
+    .locationGhana .pin {
+        height: 18px;
+    }
+
+    .ghana {
+        font-size: 15px;
+    }
+
+    .play-logo {
+        height: 70px;
+    }
+
+  
+
+
+
+    .duration > div h2 {
+        margin-bottom: 0;
+    }
+
+    .duration div {
+        display: flex;
+        align-self: center;
+        flex-direction: column;
+    }
+
+    .option1 {
+        margin-top: auto;
+        padding: 0;
+        text-align: justify;
+    }
+
+
+    .icon1 {
+        display: grid;
+        margin-right: 5px;
+    }
+    /*Sub Navigation Bar*/
+    .subNavigation {
+        justify-content: space-between;
+    }
+    .subNavigation .nav-link{
+        padding-left:0;
+        padding-right:0;
+    }
+        .subNavigation a {
+            font-size: 10px;
+            width: auto;
+        }
+    /*Cost Duration */
+    .duration {
+        display: grid;
+        text-align: center;
+    }
+
+    .whatInclude .check {
+        padding-left: initial;
+    }
+
+    .whatInclude .check1 {
+        padding-left: 15px;
+        border-left: none;
+    }
+
+    .cost {
+        display: grid;
+        text-align: center;
+    }
+
+        .cost div img {
+            width: 60%;
+        }
+
+        .cost h2 {
+            margin-bottom: 0;
+        }
+
+        .cost img {
+            height: 30px;
+        }
+
+    .check1 {
+        border-left: none;
+        margin: auto;
+    }
+
+    /*Footer*/
+
+    .footer {
+        display: grid;
+        flex-wrap: wrap;
+        height: 150px;
+        text-align: center;
+    }
+
+        .footer img {
+            width: 40%;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .footer .footer-a {
+            font-size: 12px;
+            margin: 0;
+            padding: 0;
+        }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #gallery .modal-content {
+        height: 550px;
+        width: auto;
+        right: auto;
+    }
+    #main h1 {
+        font-size: 32px;
+        text-align: center
+    }
+
+    .subNavigation {
+        justify-content: space-between;
+    }
+
+        .subNavigation a {
+            font-size: 16px;
+            width: auto;
+        }
+
+    .header .btn2 {
+        right: 10px;
+        left: auto;
+        font-size: 14px;
+        padding: 5px;
+    }
+}

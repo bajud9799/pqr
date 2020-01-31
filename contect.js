@@ -1,0 +1,1 @@
+﻿$("textarea").prop('maxlength', '10');

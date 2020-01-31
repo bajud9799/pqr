@@ -1,0 +1,201 @@
+﻿body {
+    padding: 0;
+    margin: 0;
+    font-family:  'roboto' sans-serif;
+}
+/*Navigation bar */
+#main {
+    margin-top:-30px;
+    position: relative;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0)0%, rgba(0, 0, 0, 0.06) 10%, rgba(0, 0, 0, 0.15) 22%,rgba(0, 0, 0, 0.72) 75%, rgba(0, 0, 0, 0.84) 89%, rgba(0, 0, 0, 0.91) 100%),url('../images/faq-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    height:500px;
+}
+/*.home-logo {
+    margin-right: 20px;
+}
+.manu {
+    width: 30px !important;
+    height: 30px;
+}*/
+
+.navbar-toggler {
+    width: 100px;
+}
+.mainNavbar {
+    position: fixed;
+    top: 0;
+}
+
+.wrapper {
+    width: 98.2%;
+    height: auto;
+    border-bottom: 1px solid white;
+}
+
+    .wrapper .down1 {
+        display: none;
+    }
+
+    .wrapper .home-logo {
+        margin-right: 20px;
+    }
+
+    .wrapper ul li {
+        padding: 15px;
+    }
+
+        .wrapper ul li a {
+            color: white;
+        }
+
+    .wrapper .btn1 {
+        background-color: transparent;
+        color: white;
+        border: 1px solid #fff;
+    }
+
+        .wrapper .btn1:hover {
+            color: #fff;
+        }
+
+/*.header*/
+.header {
+    height: 400px;
+}
+
+    .header img {
+        min-width: 120px;
+        margin-right:30px;
+    }
+
+    .header nav {
+        border-bottom: 1px solid white;
+        margin-top:-24px;
+    }
+
+    .header h1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        font-size: 48px;
+    }
+/*Body*/
+.container span {
+    font-size: 26px;
+    color: #00acc1;
+    font-weight: bold;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.container a {
+    position: absolute;
+    right: 0;
+}
+
+.card-.header {
+    display: inline-flex;
+    width: 100%;
+}
+
+.container p {
+    font-size: 18px;
+    color: #808080;
+}
+
+.bs-example {
+    margin: 20px;
+}
+
+.fa-minus {
+    transform: rotate(180deg);
+}
+/*Footer*/
+footer {
+    background-color: #454848;
+    height: auto;
+}
+
+    footer img {
+        margin: 15px;
+    }
+
+    footer .footer-a {
+        float: right;
+        margin-top: 1.5%;
+        padding: 15px;
+        color: white;
+    }
+
+        footer .footer-a:hover {
+            color: #fff;
+        }
+
+
+@media only screen and (min-width : 320px) and (max-width: 600px) {
+/*Navigation*/
+    #main {
+        position: relative;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0)0%, rgba(0, 0, 0, 0.06) 10%, rgba(0, 0, 0, 0.15) 22%,rgba(0, 0, 0, 0.72) 75%, rgba(0, 0, 0, 0.84) 89%, rgba(0, 0, 0, 0.91) 100%),url('../images/faq-banner.jpg');
+    }
+    .home-logo {
+        width: 150px;
+    }
+
+        .home-logo img {
+            margin-right: 0;
+            width: 100%;
+        }
+
+/*.header*/   
+    .header h1 {
+        font-size: 30px;
+    }
+
+    .header nav ul li {
+        float: left !important;
+    }
+
+    .header img {
+        margin-right: 0;
+        width: auto;
+        height: 40px;
+    }
+/*Body*/
+    .container span {
+        font-size: 14px;
+    }
+
+
+    .container p {
+        font-size: 12px;
+    }
+
+    .fa {
+        margin-top: 5px;
+        height: 28px;
+        width: auto;
+    }
+/*Footer*/
+    .footer {
+        display: grid;
+        flex-wrap: wrap;
+        height: 150px;
+        text-align: center;
+    }
+
+        .footer img {
+            width: 40%;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .footer .footer-a {
+            font-size: 12px;
+            margin: 0;
+            padding: 0;
+        }
+}

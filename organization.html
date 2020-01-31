@@ -1,0 +1,142 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- JS -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/dropkick.js"></script>
+    <script src="js/organization.js"></script>
+    <!-- CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/dropkick.css" rel="stylesheet" />
+    <link href="css/admin.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <div class="container-fluid banner">
+        <nav class="navbar navbar-expand-md  border-bottom sticky-top">
+            <img src="images/logo.png" alt="Alternate Text" class="logo" />
+            <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                    aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="images/menu.svg" class="menu" alt="">
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav ml-5 mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link font-weight-bold" href="#">ORGANIZATION</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  font-weight-bold" href="#">PROJECTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  font-weight-bold" href="#">USERS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  font-weight-bold" href="#">CATEGORES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  font-weight-bold" href="#">ACTIVITES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  font-weight-bold" href="#">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  font-weight-bold" href="#">APPLICATIONS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  font-weight-bold" href="#">CONTACT INQUIRIES</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0 mr-3">
+                    <p class="my-auto ">vatsal@tech.in.com Currently logged in as :Organization</p>
+                    <button class="login btn my-2 my-sm-0 " type="submit">Login</button>
+                </form>
+            </div>
+
+        </nav>
+
+    </div>
+
+
+    <div class="container mt-5">
+        <div class="project-details">
+            <h1>
+                Add Organization
+            </h1>
+            <form action="">
+                <div class="">
+                    <div class="row">
+                        <div class="col-6">
+                            <h2>Select User</h2>
+                            <select name="theme" id="" class=" form-control  my-auto" required>
+                                <option value="">Pop Wuj - spanish</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
+                        <div class="col-6">
+                            <h2>Organization Name</h2>
+                            <input id="" class="form-control" type="text" placeholder="Name" required name="">
+
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-6">
+                            <h2>Organization Website</h2>
+                            <input id="website" class="form-control" type="url" placeholder="Web site" name="">
+
+                        </div>
+                        <div class="col-6">
+                            <h2>Organization Email</h2><p id="fill"></p>
+                            <input id="email" class="form-control" type="email" placeholder="Email" name="" required>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-6">
+                            <h2>Contact Name</h2>
+                            <input id="" class="form-control" required type="text" placeholder="Name" name="">
+
+                        </div>
+
+                    </div>
+
+                    <div class="row mt-4 mx-auto">
+                        <h2>Organization Description</h2>
+                        <textarea name="" id="" cols="12" class="form-control" rows="11"></textarea>
+                    </div>
+
+                    <div class="row mt-4">
+                        <div class="col-6">
+                            <h2>Organization Image</h2>
+                            <input type="file" name="" class="form-control-file form-control" id="">
+                        </div>
+                        <div class="col-6">
+                            <h2>Organization Video</h2>
+                            <input type="file" name="" class="form-control-file form-control" id="">
+
+                        </div>
+                    </div>
+                    <div class="row mt-4 text-center">
+                        <div class="col-12">
+                            <input type="submit" class="btn btn-danger" name="submit" onclick="check()" value="SUBMIT">
+                            <input type="button" class="btn btn-danger ml-1" name="cancel" value="CANCEL">
+
+                        </div>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+
+    </div>
+</body>
+
+</html>
